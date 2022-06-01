@@ -12,40 +12,14 @@ export class AppIndex extends LitElement {
   static get styles() {
     return css`
       main {
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 16px;
-      }
-      #routerOutlet > * {
-        width: 100% !important;
-      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
 
-      #routerOutlet > .leaving {
-        animation: 160ms fadeOut ease-in-out;
-      }
 
-      #routerOutlet > .entering {
-        animation: 160ms fadeIn linear;
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-
-        to {
-          opacity: 0;
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0.2;
-        }
-
-        to {
-          opacity: 1;
-        }
       }
     `;
   }
